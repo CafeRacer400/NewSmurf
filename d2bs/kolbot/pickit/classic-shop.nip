@@ -1,0 +1,40 @@
+// ##### Hdin ##########################
+// High level Paladin scepter (Ormus; Nightmare - Grand Scepter type, Hell - War Scepter type)
+//[type] == scepter # [paladinskills] == 2 && [fcr] == 10 && ([skillblessedhammer] == 3 || [skillconcentration] == 3)
+//[type] == scepter # [paladinskills] == 2 && [skillblessedhammer]+[skillconcentration] == 6
+//[type] == scepter # [paladinskills] == 2 && [fcr] == 10
+[Name] == scepter && [Quality] == magic # [PaladinSkills] == 2 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == scepter && [Quality] == magic # [PaladinSkills] == 2 && ([SkillBlessedHammer] == 3 || [SkillConcentration] == 3)
+[Name] == scepter && [Quality] == magic # [PaladinSkills] == 2 && [FCR] >= 10 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == GrandScepter && [Quality] == magic # [PaladinSkills] == 2 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == GrandScepter && [Quality] == magic # [PaladinSkills] == 2 && [FCR] >= 10 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == WarScepter && [Quality] == magic # [PaladinSkills] == 2 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == WarScepter && [Quality] == magic # [PaladinSkills] == 2 && [FCR] >= 10 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == RuneScepter && [Quality] == magic # [PaladinSkills] == 2 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == RuneScepter && [Quality] == magic # [PaladinSkills] == 2 && [FCR] >= 10 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == HolyWaterSprinkler && [Quality] == magic # [PaladinSkills] == 2 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == HolyWaterSprinkler && [Quality] == magic # [PaladinSkills] == 2 && [FCR] >= 10 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == DivineScepter && [Quality] == magic # [PaladinSkills] == 2 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+[Name] == DivineScepter && [Quality] == magic # [PaladinSkills] == 2 && [FCR] >= 10 && [SkillBlessedHammer] >= 2 && [SkillConcentration] >= 2
+
+// ##### soso ##########################
+// Enchant staff (Ormus)
+//[type] == staff # [sorceressskills] == 2 && [skillenchant] == 3 // Any color (green is plain +2)
+//[type] == staff && [color] == darkred # [sorceressskills] == 2 && [skillenchant] == 3
+//[type] == staff && [color] == darkblue # [sorceressskills] == 2 && [skillenchant] == 3
+//[type] == staff && [color] == darkyellow # [sorceressskills] == 2 && [skillenchant] == 3
+//[type] == staff && [color] == darkgold # [sorceressskills] == 2 && [skillenchant] == 3
+//[type] == staff && [color] == crystalred # [sorceressskills] == 2 && [skillenchant] == 3
+
+// ##### Barb ##########################
+[name] == crystalsword # [barbarianskills] == 2
+
+// ##### Nec ###########################
+//[Type] == Wand && [Quality] == magic # [NecromancerSkills] == 2 && [SkillBoneSpear] ==3
+//[Type] == Wand && [Quality] == magic # [NecromancerSkills] == 2 && [FCR] >= 10 && [SkillBoneSpear] >=2
+
+// ##### Socket Shields ################
+//[Type] == Shield && [Quality] == normal # [Sockets] == 3
+
+// ##### Socket Weapons  ###############
+//[Name] == scepter && [Quality] == normal # [Sockets] == 3 && [itemlevelreq] <=8

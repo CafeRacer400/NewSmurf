@@ -1,0 +1,228 @@
+[name] == gold # [gold] >= 1
+[name] == minorhealingpotion
+[name] == lighthealingpotion
+[name] == healingpotion
+[name] == greaterhealingpotion
+[name] == superhealingpotion
+ 
+[name] == minormanapotion
+[name] == lightmanapotion
+[name] == manapotion
+[name] == greatermanapotion
+[name] == supermanapotion
+ 
+[name] == rejuvenationpotion
+[name] == fullrejuvenationpotion
+[name] == scrolloftownportal
+[name] == scrollofidentify
+
+// gloves
+[type] == gloves && [flag] != ethereal # [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 # [tier] == 1
+[type] == gloves && [quality] == set && [flag] != ethereal # # [tier] == 2
+[type] == gloves && [flag] != ethereal # [strength] > 0 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 # [tier] == 3
+[type] == gloves && [flag] != ethereal # [strength] > 0 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 # [tier] == 4
+[type] == gloves && [quality] == rare && [flag] != ethereal # ([strength] > 0 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5) || ([maxmana] > 0 && [hpregen] > 0) # [tier] == 5
+[Name] == Gauntlets && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 10 # [tier] == 6	//frostburn
+[Name] == LightGauntlets && [Quality] == set # [MaxHP] == 20 && [IAS] == 10 # [tier] == 7					// Arctic Mitts
+[Name] == HeavyGloves && [Quality] == set # [MaxHP] == 40 # [tier] == 8										//Sander's Taboo
+[name] == leathergloves && [quality] == unique && [flag] != ethereal # [poisonresist] == 10 # [tier] == 9	//hand of broc
+[name] == heavygloves && [quality] == unique && [flag] != ethereal # [maxhp] > 0 # [tier] == 10				//bloodfist
+[type] == gloves && [quality] == rare && [flag] != ethereal # [strength] + [dexterity] >= 15 && [hpregen] + [maxmana] >= 0 && [hpregen] + [maxmana] < 10 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 31
+[type] == gloves && [quality] == rare && [flag] != ethereal # [strength] + [dexterity] >= 15 && [hpregen] + [maxmana] >= 10 && [hpregen] + [maxmana] < 20 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 32
+[type] == gloves && [quality] == rare && [flag] != ethereal # [strength] + [dexterity] >= 15 && [hpregen] + [maxmana] >= 20 && [hpregen] + [maxmana] < 30 &&([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 33
+[type] == gloves && [quality] == rare && [flag] != ethereal # [strength] + [dexterity] >= 15 && [hpregen] + [maxmana] >= 30 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 34
+
+[name] == gauntlets && [quality] == unique && [flag] != ethereal # [itemmaxmanapercent] == 40 # [maxquantity] == 1 && [tier] == 40
+[name] == heavygloves && [quality] == unique && [flag] != ethereal # [maxhp] > 0 # [maxquantity] == 1 && [tier] == 41
+[name] == lightgauntlets && [quality] == unique && [flag] != ethereal # [fcr] > 0 # [maxquantity] == 1 && [tier] == 42
+[name] == gauntlets && [quality] == set && [flag] != ethereal # [strength] > 10 # [maxquantity] == 1 && [tier] == 43
+[name] == lightgauntlets && [quality] == set && [flag] != ethereal # [coldresist] >= 30 # [maxquantity] == 1 && [tier] == 44
+[name] == heavybracers && [quality] == set && [flag] != ethereal # [coldresist] >= 30 # [maxquantity] == 1 && [tier] == 45
+
+// belt
+[name] == sash # # [tier] == 1
+[name] == sash # [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 # [tier] == 2
+[name] == belt # # [tier] == 3
+[type] == belt && [quality] == set # # [tier] == 4							//hsarus
+[name] == sash && [quality] == unique # [maxmana] == 15 # [tier] == 5		//lenymo
+[name] == sash && [quality] == set # # [tier] == 7							//death sash
+[name] == belt && [quality] == unique # [maxmana] == 20 # [tier] == 8		//nightsmoke
+[name] == belt # [maxhp] > 40 || [maxmana] > 40 # [tier] == 5
+[name] == belt # [maxhp] > 15 && [maxmana] > 15 # [tier] == 5
+[name] == belt # [maxhp] > 25 && [maxmana] > 25 # [tier] == 6
+[name] == belt && [quality] == rare && [flag] != ethereal # ([fireresist]+[lightresist]+[coldresist]+[poisonresist]) >= ([maxhp] + [maxmana] + 30) && [fhr] > 0 # [tier] == 7
+([name] == belt || [name] == demonhidesash || [name] == sharkskinbelt || [name] == meshbelt) && [quality] == rare && [flag] != ethereal # [maxhp]+[maxmana] > 30 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 && ([fhr] > 0 || [strength] > 0 ) # [tier] == 26
+([name] == belt || [name] == demonhidesash || [name] == sharkskinbelt || [name] == meshbelt) && [quality] == rare && [flag] != ethereal # [maxhp]+[maxmana] > 40 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 8 && ([fhr] > 0 || [strength] > 0 ) # [tier] == 27
+([name] == belt || [name] == demonhidesash || [name] == sharkskinbelt || [name] == meshbelt) && [quality] == rare && [flag] != ethereal # [maxhp]+[maxmana] > 50 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 12 && ([fhr] > 0 || [strength] > 0 ) # [tier] == 28
+[name] == demonhidesash && [quality] == unique && [flag] != ethereal # # [tier] == 29
+([name] == demonhidesash || [name] == sharkskinbelt || [name] == meshbelt) && [quality] == rare && [flag] != ethereal # [maxhp]+[maxmana] > 60 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 18 && ([fhr] > 0 || [strength] > 0 ) # [tier] == 30
+([name] == demonhidesash || [name] == sharkskinbelt || [name] == meshbelt) && [quality] == rare && [flag] != ethereal # [maxhp]+[maxmana] > 70 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 21 && ([fhr] > 0 || [strength] > 0 ) # [tier] == 31
+([name] == demonhidesash || [name] == sharkskinbelt || [name] == meshbelt) && [quality] == rare && [flag] != ethereal # [maxhp]+[maxmana] > 75 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 28 && ([fhr] > 0 || [strength] > 0 ) # [tier] == 32
+[name] == demonhidesash && [quality] == unique && [flag] != ethereal # [lifedrainmindam] >= 6 # [tier] == 81
+[name] == belt && [quality] == unique && [flag] != ethereal # [fireresist] >= 10 && [lightresist] >= 10 # [maxquantity] == 1 && [tier] == 99
+([name] == demonhidesash || [name] == sharkskinbelt || [name] == meshbelt) && [quality] == rare && [flag] != ethereal # [strength] > 10 && [strength] <= 15 && ([fhr] >= 10 || [maxhp] >= 30) && [maxhp] >= 20 && [fireresist] >= 10 && [lightresist] >= 10 # [tier] == 103
+([name] == demonhidesash || [name] == sharkskinbelt || [name] == meshbelt) && [quality] == rare && [flag] != ethereal # [strength] > 15 && ([fhr] >= 10 || [maxhp] >= 30) && [maxhp] >= 20 && [fireresist] >= 10 && [lightresist] >= 10 # [tier] == 104
+[name] == meshbelt && [quality] == unique && [flag] != ethereal # [itemmaxmanapercent] == 15 # [tier] == 107 
+[name] == sharkskinbelt && [quality] == crafted # # [tier] == 110
+
+// boots
+[type] == boots # [maxhp] > 0 || [maxmana] > 0 # [tier] == 1
+[type] == boots # [fireresist]+[lightresist]+[coldresist] >= 10 # [tier] == 2
+[type] == boots && [quality] == magic # [frw] >= 10 # [tier] == 3
+[name] == LightPlatedBoots && [quality] == set # # [tier] == 4			//vidala
+[name] == heavyboots && [quality] == unique # # [tier] == 5				//gorefoot
+[name] == chainboots && [quality] == set # # [tier] == 6				//hsarus
+[name] == chainboots && [quality] == unique # # [tier] == 7				//Treads of cthon
+[type] == boots # [fireresist]+[lightresist]+[coldresist] >= 40 && ([maxmana] > 10 || [fhr] > 0) # [tier] == 10
+[type] == boots # [fireresist]+[lightresist]+[coldresist] >= 40 && ([maxmana] > 20 || [fhr] > 0) # [tier] == 11
+[name] == heavyboots && [quality] == set # # [tier] == 15				//sanders
+[name] == sharkskinboots && [quality] == unique && [flag] != ethereal # # [maxquantity] == 1 && [tier] == 101
+[name] == boots && [quality] == unique && [flag] != ethereal # # [maxquantity] == 2 && [tier] == 102
+//[name] == battleboots && [quality] == unique && [flag] != ethereal # # [maxquantity] == 1 && [tier] == 103
+
+// helm
+[type] == helm && [flag] != ethereal # [maxhp] > 0 # [tier] == 1
+[type] == helm && [flag] != ethereal # [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 # [tier] == 2
+[type] == helm && [flag] != ethereal # [maxhp] > 5 # [tier] == 3
+[type] == helm && [quality] == set && [flag] != ethereal # # [tier] == 4
+[type] == helm && [flag] != ethereal # [maxhp] > 5 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 10 # [tier] == 5
+[type] == helm && [flag] != ethereal # [maxhp] > 10 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 10 # [tier] == 6
+[type] == helm && [flag] != ethereal # [maxhp] > 20 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 10 # [tier] == 7
+[type] == helm && [quality] <= superior && [flag] != ethereal # [itemallskills] > 0 # [tier] == 8
+[name] == helm && [quality] == unique # [defense] == 10 # [tier] == 9						//coif of glory
+[Name] == Helm && [Quality] == set # # [tier] == 10 											//Berserker's Headgear
+[Name] == skullcap && [quality] == unique # [itemallskills] == 1 # [tier] == 11				//tarnhelm
+[Name] == Cap && [Quality] == set # [FireResist] == 10 && [LightResist] == 10 && [ColdResist] == 10 && [PoisonResist] == 10 # [tier] == 12	//Infernal Cranium
+[name] == fullhelm && [quality] == unique # [defense] >= 10 # [tier] == 13					//duskdeep
+[name] == cap && [quality] == unique # [maxhp] == 15 && [maxmana] == 15 # [tier] == 15		//biggins Bonnet
+[type] == helm && [quality] == rare && [flag] != ethereal # ([paladinskills] > 0 || [palicombatskilltab] > 0) || [maxhp] >= 20 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 10 && [itemmanaperlevel] > 0 # [tier] == 20
+[type] == helm && [quality] == rare && [flag] != ethereal # ([paladinskills] > 0 || [palicombatskilltab] > 0) || ([maxhp] >= 20 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 10 && [itemmanaperlevel] > 0 && ([energy] > 0 || [fhr] > 0)) # [tier] == 21
+[type] == helm && [quality] == rare && [flag] != ethereal # ([paladinskills] > 1 || [palicombatskilltab] > 1) && ([maxhp] >= 20 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 10 && [itemmanaperlevel] > 0 && ([energy] > 0 || [fhr] > 0)) # [tier] == 22
+[type] == helm && [quality] == rare && [flag] != ethereal # [fhr] > 0 && [enhanceddefense] < 90 && [maxhp] >= 30 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 38
+[type] == helm && [quality] == rare && [flag] != ethereal # [fhr] > 0 && [enhanceddefense] < 90 && [maxhp] >= 30 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 39
+[type] == helm && [name] != bonehelm && [name] != grimhelm && [quality] == rare && [flag] != ethereal # [enhanceddefense] >= 90 && [maxhp] >= 30 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 40
+[type] == helm && [name] != bonehelm && [name] != grimhelm && [quality] == rare && [flag] != ethereal # [enhanceddefense] >= 90 && [maxhp] >= 30 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 41
+[name] == bonehelm && [quality] == rare && [flag] != ethereal # [enhanceddefense] >= 90 && [maxhp] >= 30 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 101
+[name] == grimhelm && [quality] == rare && [flag] != ethereal # [enhanceddefense] >= 90 && [maxhp] >= 30 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 102
+[type] == helm && [flag] == runeword # [lightresist] >= 30 # [tier] == 103
+[name] == sallet && [quality] == unique && [flag] != ethereal # [fireresist] >= 12 && [lightresist] >= 12 # [tier] == 104
+[name] == deathmask && [quality] == set && [flag] != ethereal # [fireresist] >= 12 && [lightresist] >= 12 # [maxquantity] == 1 && [tier] == 105
+[name] == shako && [quality] == unique && [flag] != ethereal # [itemallskills] == 2 # [tier] == 106
+
+// amulet
+[type] == amulet # [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 # [tier] == 1
+[type] == amulet # [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 && ([hpregen] > 0 || [maxhp] > 0) # [tier] == 2
+[type] == amulet # [maxhp] > 15 # [tier] == 2
+[type] == amulet # [maxhp] > 15 && [maxmana] > 15 # [tier] == 3
+[type] == amulet && [quality] == rare # [maxhp] > 0 && [maxmana] > 0 && ([fcr] > 0 || [strength] > 0) # [tier] == 4
+[type] == amulet && [quality] == rare # [maxhp] > 0 && [maxmana] > 0 && ([fcr] > 0 && [strength] > 0) # [tier] == 5
+[type] == amulet && [quality] == set # [ColdResist] == 20 && [MaxMana] == 15 # [tier] == 6					//Vidala's Snare
+[Type] == amulet && [Quality] == set # [FHR] == 10 && [LightMaxDam] == 5 # [tier] == 7						//Cathan's Sigil
+[Type] == amulet && [Quality] == set # [ItemLightRadius] == 3 && [ItemDamageToMana] == 20 # [tier] == 8		//Angelic Wings
+[type] == amulet && [quality] == unique # [itemallskills] == 1 # [tier] == 9
+[type] == amulet && [quality] == rare # [maxhp]+[maxmana] >= 30 || ([maxhp] > 20 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 10
+[type] == amulet && [quality] == rare # [maxhp]+[maxmana] >= 50 || ([maxhp] > 30 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 11
+[type] == amulet && [quality] == rare # [maxhp]+[maxmana] >= 70 || ([maxhp] > 40 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 60) # [tier] == 12
+[type] == amulet && [quality] == rare # ([maxhp]+[maxmana] >= 90 || ([maxhp] >= 50 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 60)) # [tier] == 13
+[type] == amulet # ([fireresist]+[lightresist]+[coldresist]+[poisonresist] > 110) # [tier] == 14
+[type] == amulet && [quality] == rare # [maxhp]+[maxmana] >= 110 || (([maxhp] >= 55) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 15
+[type] == amulet && [quality] == rare # [maxhp]+[maxmana] >= 130 || ([maxhp] >= 58 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 16
+[type] == amulet && [quality] == rare # [maxhp]+[maxmana] >= 150 || ([maxhp] >= 58 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 17
+[type] == amulet && [quality] == unique # [fireresist] >= 50 # [tier] == 98
+[type] == amulet && [quality] == unique # [itemabsorbfireperlevel] >= 0 # [tier] == 99 
+[type] == amulet && [quality] == unique # [itemallskills] == 2 # [tier] == 100
+[name] == amulet && [quality] == rare # [itemmagicbonus] == 0 && [paladinskills] == 2 && (([strength] > 5 && [strength] <= 10) || ([maxhp] >= 20 && [maxhp] < 30)) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 60 # [tier] == 101 // 15 res all or higher
+[name] == amulet && [quality] == rare # [itemmagicbonus] == 0 && [paladinskills] == 2 && (([strength] > 10 && [strength] <= 15) || ([maxhp] >= 30 && [maxhp] < 40)) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 60 # [tier] == 102 // 15 res all or higher
+[name] == amulet && [quality] == rare # [itemmagicbonus] == 0 && [paladinskills] == 2 && ([strength] > 15 || [maxhp] >= 40) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 60  # [tier] == 103 // 15 res all or higher
+
+//ilvl is high enough for +skills
+[type] == amulet && [quality] == rare # ([palicombatskilltab] > 0 && ([maxhp]+[maxmana] >= 90) || ([maxhp] > 50 && ([strength] > 0 || [fcr] > 0))) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 20 # [tier] == 15
+[type] == amulet && [quality] == rare # ([paladinskills] > 0 && [maxhp]+[maxmana] >= 90) || ([maxhp] > 50 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 20) # [tier] == 16
+[type] == amulet && [quality] == rare # ([palicombatskilltab] > 0 && [maxhp]+[maxmana] >= 110) || ([maxhp] > 55 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 17
+[type] == amulet && [quality] == rare # ([paladinskills] > 0 && [maxhp]+[maxmana] >= 110) || ([maxhp] > 55 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 18
+[type] == amulet && [quality] == rare # ([palicombatskilltab] > 0 || [paladinskills] > 0) && ([maxhp]+[maxmana] >= 130 || ([maxhp] >= 58 && ([strength] > 0 || [fcr] > 0))) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40 # [tier] == 19
+[type] == amulet && [quality] == rare # ([palicombatskilltab] > 0 || [paladinskills] > 0) && ([maxhp]+[maxmana] >= 150 || ([maxhp] >= 58 && ([strength] > 0 || [fcr] > 0)) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 20
+//highend
+[type] == amulet && [quality] == rare # ([palicombatskilltab] >= 2 || [paladinskills] > 1) && ([maxhp]+[maxmana] >= 100 || ([maxhp] > 52 && ([strength] > 5 || [fcr] > 5)) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 21
+[type] == amulet && [quality] == rare # ([palicombatskilltab] >= 2 || [paladinskills] > 1) && ([maxhp]+[maxmana] >= 110 || ([maxhp] > 52 && ([strength] > 5 || [fcr] > 5))&& [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 22
+[type] == amulet && [quality] == rare # ([palicombatskilltab] >= 2 || [paladinskills] > 1) && ([maxhp]+[maxmana] >= 120 || ([maxhp] > 52 && ([strength] > 5 || [fcr] > 5)) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 23
+[type] == amulet && [quality] == rare # ([palicombatskilltab] >= 2 || [paladinskills] > 1) && ([maxhp]+[maxmana] >= 130 || ([maxhp] > 52 && ([strength] > 5 || [fcr] > 5)) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 24
+[type] == amulet && [quality] == rare # ([palicombatskilltab] >= 2 || [paladinskills] > 1) && ([maxhp]+[maxmana] >= 145 || ([maxhp] > 52 && ([strength] > 5 || [fcr] > 5)) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 40) # [tier] == 25
+
+// ring
+[type] == ring # [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 # [tier] == 1
+[type] == ring # [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 5 && ([hpregen] > 0 || [maxhp] > 0) # [tier] == 2
+[type] == ring # [maxhp] > 15 # [tier] == 2
+[type] == ring # [maxhp] > 15 && [maxmana] > 15 # [tier] == 3
+[type] == ring && [quality] == rare # [maxhp] > 0 && [maxmana] > 0 && [fcr] > 0 || [strength] > 0 # [tier] == 4
+[type] == ring && [quality] == rare # [maxhp] > 0 && [maxmana] > 0 && [fcr] > 0 && [strength] > 0 # [tier] == 5
+[Type] == ring && [Quality] == set # [LifeLeech] == 6 && [NormalDamageReduction] == 2 # [tier] == 6 		//Cathan's Seal
+[Type] == ring && [Quality] == set # [MaxHP] == 20 # [tier] == 7											//Angelic Halo
+[type] == ring && [quality] == unique # [itemallskills] == 1 # [tier] == 101 //soj
+[type] == ring && [quality] == rare # [maxhp]+[maxmana] >= 30 || ([maxhp] > 20 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32) # [tier] == 8
+[type] == ring && [quality] == rare # [maxhp]+[maxmana] >= 50 || ([maxhp] > 25 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32) # [tier] == 9
+[type] == ring && [quality] == rare # [maxhp]+[maxmana] >= 70 || ([maxhp] > 30 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32) # [tier] == 10
+[type] == ring && [quality] == rare # [maxhp]+[maxmana] >= 90 || ([maxhp] > 35 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32) # [tier] == 11
+[type] == ring && [quality] == rare # [maxhp]+[maxmana] >= 110 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32 # [tier] == 12
+[type] == ring && [quality] == rare # [maxhp]+[maxmana] >= 120 &&([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32 # [tier] == 13
+[type] == ring && [quality] == rare # [maxhp]+[maxmana] >= 130 && ([strength] > 0 || [fcr] > 0) && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32 # [tier] == 13
+[name] == ring && ([quality] == magic || [quality] == rare) # [fcr] == 10 && [maxhp] > 30 && [strength] > 5 && [strength] <= 10 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 1 # [tier] == 33
+[name] == ring && ([quality] == magic || [quality] == rare) # [fcr] == 10 && [maxhp] > 30 && [strength] > 5 && [strength] <= 10 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 1 # [tier] == 34
+[name] == ring && ([quality] == magic || [quality] == rare) # [fcr] == 10 && [maxhp] > 30 && [strength] > 10 && [strength] <= 15 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 1 # [tier] == 101
+[name] == ring && ([quality] == magic || [quality] == rare) # [fcr] == 10 && [maxhp] > 30 && [strength] > 10 && [strength] <= 15 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 102
+[name] == ring && ([quality] == magic || [quality] == rare) # [fcr] == 10 && [maxhp] > 30 && [strength] > 15 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 103
+[name] == ring && ([quality] == magic || [quality] == rare) # [fcr] == 10 && [maxhp] > 30 && [strength] > 15 && ([coldresist] >= 10) + ([fireresist] >= 10) + ([lightresist] >= 10) >= 2 # [tier] == 104
+
+// armor
+[type] == armor # [maxhp] > 0 || [strength] > 0 # [tier] == 1
+[type] == armor # [maxhp] > 0 && [strength] > 0 # [tier] == 2
+[name] == quiltedarmor && [quality] == set # # [tier] == 3					//arctic furs
+[type] == armor # [maxhp] >= 20 && [fireresist]+[lightresist]+[coldresist] >= 20 # [tier] == 4
+[type] == armor && [quality] <= superior # [poisonresist] == 30 # [tier] == 5
+[name] == scalemail && [quality] == unique # # [tier] == 6					//hawkmail
+[name] == quiltedarmor && [quality] == unique # # [tier] == 7				//greyform
+[name] == studdedleather && [quality] == unique # # [tier] == 8				//twitch
+[type] == armor && [quality] == rare # [maxhp]+[maxmana] >= 40 && [fireresist]+[lightresist]+[coldresist] >= 20 && [strength] > 0 # [tier] == 9
+[type] == armor && [quality] == rare # [maxhp]+[maxmana] >= 50 && [fireresist]+[lightresist]+[coldresist] >= 20 && [strength] >= 3 # [tier] == 10
+[type] == armor && [quality] == rare # [maxhp]+[maxmana] >= 60 && [fireresist]+[lightresist]+[coldresist] >= 20 && [strength] >= 6 # [tier] == 11
+[type] == armor && [quality] == rare # [maxhp]+[maxmana] >= 70 && [fireresist]+[lightresist]+[coldresist] >= 20 && [strength] >= 6 # [tier] == 12
+[type] == armor && [quality] == rare # [maxhp]+[maxmana] >= 80 && [fireresist]+[lightresist]+[coldresist] >= 20 && [strength] >= 6 # [tier] == 13
+[name] == cuirass && [quality] == unique && [flag] != ethereal # # [tier] == 20
+[name] == mageplate && [quality] == unique && [flag] != ethereal # # [tier] == 21
+[name] == serpentskinarmor && [quality] == unique && [flag] != ethereal # # [tier] == 22
+[name] == russetarmor && [quality] == unique && [flag] != ethereal # # [tier] == 23
+[name] == mesharmor && [quality] == unique && [flag] != ethereal # # [tier] == 24
+[name] == russetarmor && [quality] == unique && [flag] == ethereal # # [tier] == 25
+[type] == armor && [flag] == runeword # [poisonresist] == 30 && [dexterity] == 6 # [maxquantity] == 1 && [tier] == 90		// Stealth
+[type] == armor && [flag] == runeword # [fireresist] == 50 && [lightresist] == 50 # [tier] == 101
+[type] == armor && [flag] == runeword # [lightresist] >= 60 # [tier] == 102
+
+// weapon
+[type] == scepter && [quality] <= superior && [flag] != ethereal # # [tier] == 1
+[type] == scepter && [quality] == magic && [flag] != ethereal # # [tier] == 2
+[type] == scepter && [quality] == rare && [flag] != ethereal # # [tier] == 3
+[name] == morningstar && [quality] == unique && [flag] != ethereal # # [tier] == 4			//bloodrise
+[name] == scimitar && [quality] == unique && [flag] != ethereal # # [tier] == 5				//blood crescent
+[name] == scimitar && [flag] == runeword # [itemopenwounds] == 50 # [tier] == 20			//steel
+[name] == flail && [flag] == runeword # [itemopenwounds] == 50 # [tier] == 30				//steel
+[name] == warhammer && [flag] != ethereal # # [tier] == 31
+[name] == warhammer && [flag] == runeword # [itemopenwounds] == 50 # [tier] == 32			//steel
+[name] == warhammer && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 100 # [tier] == 32	//ironstone
+[name] == flail && [quality] == unique && [flag] != ethereal # [enhanceddamage] >= 50 # [tier] == 33		//generals tan do li ga
+[name] == warscepter && [flag] != ethereal # [skillconviction] >= 2 # [tier] == 35			//Conviction Scepter
+[type] == sword && [flag] == runeword # [itemallskills] == 2 && [fcr] >= 25 && [fhr] >= 55 # [tier] == 100 //spirit
+
+// shield
+[type] == shield # [fireresist]+[lightresist]+[coldresist] >= 10 || [maxhp] > 9 # [tier] == 1
+[type] == auricshields # [fireresist]+[lightresist]+[coldresist] >= 10 # [tier] == 2
+[type] == auricshields # [fireresist]+[lightresist]+[coldresist] >= 40 || [maxhp] > 29 # [tier] == 3
+[type] == auricshields # [fireresist]+[lightresist]+[coldresist] >= 10 && [maxhp] > 9 # [tier] == 4
+[type] == auricshields # [fireresist]+[lightresist]+[coldresist] >= 20 && [maxhp] > 19 # [tier] == 5
+[type] == auricshields # [fireresist]+[lightresist]+[coldresist] >= 40 && [maxhp] > 29 # [tier] == 6
+[type] == auricshields && [quality] == rare && [flag] != ethereal # [fireresist]+[lightresist]+[coldresist] >= 10 && [maxhp] > 29 && ([fbr] > 0 || [strength] > 0) # [tier] == 7
+[type] == auricshields && [quality] == rare && [flag] != ethereal # [fireresist]+[lightresist]+[coldresist] >= 10 && [maxhp] > 29 && ([fbr] > 0 && [strength] >= 3) # [tier] == 8
+[type] == auricshields && [quality] == rare && [flag] != ethereal # [fireresist]+[lightresist]+[coldresist] >= 10 && [maxhp] > 29 && ([fbr] == 30 && [strength] >= 6) # [tier] == 9
+[type] == auricshields && [quality] <= superior && [flag] != ethereal # ([poisonresist]+[fireresist]+[coldresist]+[lightresist] == 30) && [fbr] == 40 # [tier] == 10
+[type] == shield && [flag] == runeword # [itemgoldbonus] == 50 # [tier] == 11 //rhyme
+[type] == shield && [flag] == runeword # [fireresist] >= 40 && [lightresist] >= 40 # [maxquantity] == 1 && [tier] == 100 //ancient's pledge
+[type] == auricshields && [flag] == runeword # [fcr] >= 25 && [fhr] >= 55 # [maxquantity] == 1 && [tier] == 101 //spirit

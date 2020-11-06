@@ -1,0 +1,26 @@
+//-----------------------------------------------------------------------------------------------------
+//		This is a list of items that you want your bot to pick up for money during the beginner stage.
+//
+// -----------------------------------------------------------------------------------------------------
+	
+//WHITE WEAPONS
+[type] == wand && ([Quality] >= magic && [Quality] <= rare) # [enhanceddamage] >= 2500 //never, so sold
+[type] == bow && ([Quality] >= magic && [Quality] <= rare) # [enhanceddamage] >= 2500 //never, so sold
+[type] == crossbow && ([Quality] >= magic && [Quality] <= rare) # [enhanceddamage] >= 2500 //never, so sold
+[type] == comboweapon && ([Quality] >= magic && [Quality] <= rare) # [enhanceddamage] >= 2500 //never, so sold
+//-----------------------------
+[type] == javelin && ([quality] >= magic && [quality] <= rare) # [itemreplenishquantity] > 1000 // never, so sold
+[type] == throwingknife && ([quality] >= magic && [quality] <= rare) # [itemreplenishquantity] > 1000 // never, so sold
+[type] == throwingaxe && ([quality] >= magic && [quality] <= rare) # [itemreplenishquantity] > 1000 // never, so sold
+[type] == thrownweapon && ([quality] >= magic && [quality] <= rare) # [itemreplenishquantity] > 1000 // never, so sold
+//----------------------------
+[type] == amazonbow && ([Quality] >= magic && [Quality] <= rare) # [enhanceddamage] >= 2500 //never, so sold
+[type] == amazonspear && ([Quality] >= magic && [Quality] <= rare) # [enhanceddamage] >= 2500 //never, so sold
+[type] == amazonjavelin && ([Quality] >= magic && [Quality] <= rare) # [enhanceddamage] >= 2500 //never, so sold
+([type] == handtohand || [type] == assassinclaw) && ([Quality] >= magic && [Quality] <= rare) # [enhanceddamage] >= 2500 //never, so sold
+//----------------------------
+[type] == voodooheads && ([Quality] >= magic && [Quality] <= rare) # [enhanceddefense] >= 2500 //never, so sold
+[type] == pelt && ([Quality] >= magic && [Quality] <= rare) # [enhanceddefense] >= 2500 //never, so sold
+//----------------------------
+
+

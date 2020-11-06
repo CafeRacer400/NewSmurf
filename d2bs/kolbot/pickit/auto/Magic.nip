@@ -1,0 +1,105 @@
+//-----------------------------------------------------------------------------------------------------
+//		This is a list of magic AND rare items that you want your bot to pick up.
+//		Note that you will (obviously) find more rare items listed in the Rare.nip file.
+//
+//		Any item on this list which starts with //[ will NOT be picked up at all
+//		Any item on this list which starts with [ 	will be picked up, THEN kept unid'ed OR checked and then kept if it's good enough.
+//		More detailed instructions can be found at: http://www.projectetal.com/wiki/index.php/Nip_Config
+// -----------------------------------------------------------------------------------------------------
+
+//RARE/MAGIC JEWELS
+//[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MAXDamage] >= 20 || ([MAXDamage] >= 13 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8))
+//[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MINDamage] >= 18 || ([MINDamage] == 8 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8))
+//[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [EnhancedDamage] >= 35 || ([EnhancedDamage] >= 30 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8))
+//[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ToHit] >= 75 && ([MaxHP] >= 15 || [Strength] >= 8 || [Dexterity] >= 8 || [FHR] == 7 || [ItemReqPercent] == -15)
+//[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MaxMana] >= 15 && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [ItemReqPercent] == -15)
+[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 48 && ([MaxHP] >= 15 || [Strength] >= 8 || [Dexterity] >= 8 || [FHR] == 7 || [ItemReqPercent] == -15)
+//[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 60
+//[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # ([ColdResist] >= 25 || [FireResist] >= 25 || [LightResist] >= 25 || [PoisonResist] == 30) && ([MaxHP] >= 15 || [Strength] >= 8 || [Dexterity] >= 8 || [FHR] == 7 || [ItemReqPercent] == -15)
+//[Name] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [PoisonMinDam] >= 20
+
+//MAGIC RINGS
+[Type] == Ring && [Quality] == Magic # (([ColdResist]+[FireResist]+[LightResist] >= 90) || ([ColdResist]+[FireResist]+[PoisonResist] >= 90) || ([ColdResist]+[LightResist]+[PoisonResist] >= 90) || ([FireResist]+[LightResist]+[PoisonResist] >= 90))
+
+//MAGIC MF AMULET
+[Type] == Amulet && [Quality] == Magic # (([ColdResist]+[FireResist]+[LightResist] >= 90) || ([ColdResist]+[FireResist]+[PoisonResist] >= 90) || ([ColdResist]+[LightResist]+[PoisonResist] >= 90) || ([FireResist]+[LightResist]+[PoisonResist] >= 90))
+
+//RARE/MAGIC +2 CLASS AMULET
+[Type] == Amulet && [Quality] == Magic # [ItemAddClassSkills] == 2 && (([ColdResist]+[FireResist]+[LightResist] >= 90) || ([ColdResist]+[FireResist]+[PoisonResist] >= 90) || ([ColdResist]+[LightResist]+[PoisonResist] >= 90) || ([FireResist]+[LightResist]+[PoisonResist] >= 90))
+
+//RARE +2 CLASS SKILL CIRCLET
+[Type] == Circlet && [Quality] == Magic # [ItemAddClassSkills] == 2 && (([ColdResist]+[FireResist]+[LightResist] >= 90) || ([ColdResist]+[FireResist]+[PoisonResist] >= 90) || ([ColdResist]+[LightResist]+[PoisonResist] >= 90) || ([FireResist]+[LightResist]+[PoisonResist] >= 90))
+
+//MAGIC/RARE PELT
+[Type] == Pelt && ([Quality] == Rare || [Quality] == Magic) # [DruidSkills] == 2 && [ItemSingleSkill] >= 10 //2
+//[Type] == Pelt && ([Quality] == Rare || [Quality] == Magic) # [ElementalSkillTab] >= 2 && [ItemSingleSkill] >= 2
+//[Type] == Pelt && ([Quality] == Rare || [Quality] == Magic) # [DruidSummoningSkillTab] >= 2 && [ItemSingleSkill] >= 2
+//[Type] == Pelt && ([Quality] == Rare || [Quality] == Magic) && [Flag] != Ethereal # [ShapeShiftingSkillTab] >= 2 && [ItemSingleSkill] >= 2
+
+//MAGIC/RARE BATTLE ORDER HELMS
+[Type] == PrimalHelm && [Quality] == Magic # [SkillBattleOrders]+[WarcriesSkillTab] >= 5
+[Type] == PrimalHelm && [Quality] == Magic # [SkillBattleOrders]+[BarbarianSkills] >= 5
+
+//MAGIC DUELER SHIELDS
+[Type] == Shield && [Quality] == Magic && [Flag] != Ethereal # [Sockets] >= 3 && ([ItemReqPercent] >= 20 || [FHR] >= 17 || [FBR] == 30 || [MaxHP] >= 40)
+[Type] == Shield && [Quality] == Magic && [Flag] != Ethereal # [Sockets] >= 4 && ([ItemReqPercent] >= 20 || [FHR] >= 17 || [FBR] == 30 || [MaxHP] >= 40)
+[Type] == AuricShields && [Quality] == Magic && [Flag] != Ethereal # [Sockets] >= 4 && ([ItemReqPercent] >= 20 || [FHR] >= 17 || [FBR] == 30 || [MaxHP] >= 40)
+
+//MAGIC/RARE NECRO SHIELDS
+[Type] == VoodooHeads && ([Quality] == Rare || [Quality] == Magic) # [NecromancerSkills] == 2 && ([SkillBoneSpear] + [SkillBoneSpirit] + [SkillPoisonNova] >= 6)
+
+//MAGIC/RARE SOCKETED WHALE ARMOR
+//[Type] == Armor && ([Quality] == Rare || [Quality] == Magic) # [Sockets] == 3 && [MaxHP] >= 75
+//[Type] == Armor && ([Quality] == Rare || [Quality] == Magic) # [Sockets] == 3 && [MaxHP] >= 75
+[Type] == Armor && ([Quality] == Rare || [Quality] == Magic) # [Sockets] == 4 && [MaxHP] >= 100
+[type] == armor && ([Quality] == Magic || [Quality] == Rare || [Quality] == Unique) # [Defense] >= 550  && [fireresist]+[lightresist]+[coldresist] >= 20
+//[Type] == Armor && ([Quality] == Rare || [Quality] == Magic) # [MaxHP] >= 175 //75 ,175 never appear
+
+//MAGIC/RARE SOCKET/FHR ARMOR
+//[Type] == Armor && ([Quality] == Rare || [Quality] == Magic) # [Sockets] == 3 && [FHR] >= 17
+//[Type] == Armor && ([Quality] == Rare || [Quality] == Magic) # [Sockets] == 4 && [FHR] >= 24
+//[Type] == Armor && ([Quality] == Magic || [Quality] == Magic) # [Sockets] == 3 && [FHR] >= 17
+//[Type] == Armor && ([Quality] == Magic || [Quality] == Magic) # [Sockets] == 4 && [FHR] >= 24
+
+//MAGIC SKILL/IAS GLOVES
+[Type] == Gloves && [Quality] == Magic && [Flag] != Ethereal # [IAS] >= 20 && [JavelinAndSpearSkillTab] == 5//3
+[Type] == Gloves && [Quality] == Magic && [Flag] != Ethereal # [IAS] >= 20 && [BowAndCrossbowSkillTab] == 5//3
+[Type] == Gloves && [Quality] == Magic && [Flag] != Ethereal # [IAS] >= 20 && [PassiveAndMagicSkillTab] == 5//3
+[Type] == Gloves && [Quality] == Magic && [Flag] != Ethereal # [IAS] >= 20 && [MartialArtsSkillTab] == 5//3
+
+//MAGIC/RARE +5/+6 LS CLAWS
+//[Type] == AssassinClaw && ([Quality] == Rare || [Quality] == Magic) # [AssassinSkills]+[SkillLightningSentry] >= 5
+//[Type] == AssassinClaw && ([Quality] == Rare || [Quality] == Magic) # [TrapsSkillTab]+[SkillLightningSentry] >= 5
+//[Type] == HandToHand && ([Quality] == Rare || [Quality] == Magic) # [AssassinSkills]+[SkillLightningSentry] >= 5
+//[Type] == HandToHand && ([Quality] == Rare || [Quality] == Magic) # [TrapsSkillTab]+[SkillLightningSentry] >= 5
+
+//MAGIC/RARE +5/+6 JAV SKILLS 30+ [IAS] JAVELINS
+//([Name] == MaidenJavelin || [Name] == CeremonialJavelin || [Name] == MatriarchalJavelin) && ([Quality] == Rare || [Quality] == Magic) # [IAS] >= 30 && [AmazonSkills]+[JavelinAndSpearSkillTab] >= 4
+//([Name] == MaidenJavelin || [Name] == CeremonialJavelin || [Name] == MatriarchalJavelin) && ([Quality] == Rare || [Quality] == Magic) # [IAS] >= 30 && [JavelinAndSpearSkillTab] >= 4
+
+//MAGIC/RARE WARCRY WEAPONS
+//([Type] == Knife || [Type] == Sword) && ([Quality] == Magic || [Quality] == Rare) # [WarcriesSkillTab] == 3 && [Strength] >= 1
+
+//MAGIC/RARE SCEPTORS
+[Type] == Scepter && ([Quality] == Magic || [Quality] == Rare) # (([PaladinSkills]+[SkillBlessedHammer] >= 4) || ([PaladinSkills]+[SkillConcentration] >= 4) || ([PaladinSkills]+[SkillFistOfTheHeavens] >= 4)) && [FCR] >= 20
+[Type] == Scepter && ([Quality] == Magic || [Quality] == Rare) # (([PaliCombatSkillTab]+[SkillBlessedHammer] >= 4) || ([PaliCombatSkillTab]+[SkillConcentration] >= 4) || ([PaliCombatSkillTab]+[SkillFistOfTheHeavens] >= 4)) && [FCR] >= 20
+
+//MAGIC/RARE SWORDS
+//[Name] == PhaseBlade && ([Quality] == Magic || [Quality] == Rare) # [Sockets] == 4 && [IAS] >= 40
+
+//MAGIC/RARE SORCERESS ORBS
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([SorceressSkills]+[SkillLightning] >= 5) || ([SorceressSkills]+[SkillChainLightning] >= 5)
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([SorceressSkills]+[SkillFireball] >= 5) || ([SorceressSkills]+[SkillFirebolt] >= 5)
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([SorceressSkills]+[SkillGlacialSpike] >= 5) || ([SorceressSkills]+[SkillFrozenOrb] >= 5)
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # [SorceressSkills]+[SkillEnchant] >= 5
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([LightningSkillTab]+[SkillLightning] >= 5) || ([LightningSkillTab]+[SkillChainLightning] >= 5)
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([FireSkillTab]+[SkillFireball] >= 5) || ([FireSkillTab]+[SkillFirebolt] >= 5)
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([ColdSkillTab]+[SkillGlacialSpike] >= 5) || ([ColdSkillTab]+[SkillFrozenOrb] >= 5)
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # [FireSkillTab]+[SkillEnchant] >= 5
+
+//MAGIC/RARE NECRO WANDS AND DAGGERS
+//[Type] == Wand && ([Quality] == Rare || [Quality] == Magic) # ([PoisonAndBoneSkillTab] >= 2 || [NecromancerSkills] == 2) && [SkillPoisonNova] == 3
+//[Type] == Knife && ([Quality] == Rare || [Quality] == Magic) # ([PoisonAndBoneSkillTab] >= 2 || [NecromancerSkills] == 2) && [SkillPoisonNova] == 3
+//[Type] == Knife && ([Quality] == Rare || [Quality] == Magic) # ([PoisonAndBoneSkillTab] >= 2 || [NecromancerSkills] == 2) && [SkillPoisonDagger] == 3
+//([Type] == Knife || [Type] == Wand) && ([Quality] == Rare || [Quality] == Magic) && [Suffix] == 594
+//([Type] == Knife || [Type] == Wand) && ([Quality] == Rare || [Quality] == Magic) #// [Description] == "Lower Resist"

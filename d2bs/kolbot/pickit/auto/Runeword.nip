@@ -1,0 +1,4 @@
+[Type] == Weapon && [Flag] == Runeword
+[Type] == Armor && [Flag] == Runeword
+[Type] == Shield && [Flag] == Runeword
+[Type] == Helm && [Flag] == Runeword

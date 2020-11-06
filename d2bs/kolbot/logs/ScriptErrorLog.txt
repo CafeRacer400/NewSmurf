@@ -1,0 +1,16 @@
+[2020/11/05 18:52:57] <A1> Error in AutoSmurf (pather.js line 1043): makePortal: No TP tomes.
+Stack: main@default.dbj:224, Loader.init@loader.js:17, Loader.loadScripts@loader.js:135, AutoSmurf@autosmurf.js:7048, @autosmurf.js:2813, Town.goToTown@town.js:2177, Pather.makePortal@pather.js:1043
+[2020/11/05 18:52:58] <A4> Error in AutoSmurf (pather.js line 1043): makePortal: No TP tomes.
+Stack: main@default.dbj:224, Loader.init@loader.js:17, Loader.loadScripts@loader.js:135, AutoSmurf@autosmurf.js:7048, @autosmurf.js:2813, Town.goToTown@town.js:2177, Pather.makePortal@pather.js:1043
+[2020/11/05 18:52:58] <A3> Error in AutoSmurf (pather.js line 1043): makePortal: No TP tomes.
+Stack: main@default.dbj:224, Loader.init@loader.js:17, Loader.loadScripts@loader.js:135, AutoSmurf@autosmurf.js:7048, @autosmurf.js:2813, Town.goToTown@town.js:2177, Pather.makePortal@pather.js:1043
+[2020/11/05 18:52:58] <A6> Error in AutoSmurf (pather.js line 1043): makePortal: No TP tomes.
+Stack: main@default.dbj:224, Loader.init@loader.js:17, Loader.loadScripts@loader.js:135, AutoSmurf@autosmurf.js:7048, @autosmurf.js:2813, Town.goToTown@town.js:2177, Pather.makePortal@pather.js:1043
+[2020/11/05 18:52:58] <A5> Error in AutoSmurf (pather.js line 1043): makePortal: No TP tomes.
+Stack: main@default.dbj:224, Loader.init@loader.js:17, Loader.loadScripts@loader.js:135, AutoSmurf@autosmurf.js:7048, @autosmurf.js:2813, Town.goToTown@town.js:2177, Pather.makePortal@pather.js:1043
+[2020/11/05 18:52:58] <A2> Error in AutoSmurf (pather.js line 1043): makePortal: No TP tomes.
+Stack: main@default.dbj:224, Loader.init@loader.js:17, Loader.loadScripts@loader.js:135, AutoSmurf@autosmurf.js:7048, @autosmurf.js:2813, Town.goToTown@town.js:2177, Pather.makePortal@pather.js:1043
+[2020/11/05 20:00:15] <A4> Error in AutoSmurf (pather.js line 1021): useWaypoint: Failed to use waypoint
+Stack: main@default.dbj:224, Loader.init@loader.js:17, Loader.loadScripts@loader.js:135, AutoSmurf@autosmurf.js:7092, @autosmurf.js:3313, @autosmurf.js:1910, useWaypoint@pather.js:1021
+[2020/11/05 20:00:16] <A2> Error in AutoSmurf (pather.js line 1021): useWaypoint: Failed to use waypoint
+Stack: main@default.dbj:224, Loader.init@loader.js:17, Loader.loadScripts@loader.js:135, AutoSmurf@autosmurf.js:7092, @autosmurf.js:3313, @autosmurf.js:1910, useWaypoint@pather.js:1021

@@ -1,0 +1,9 @@
+// helm
+[type] == helm && ([Quality] == Magic || [Quality] == Rare || [Quality] == Unique) # [Defense] >= 30 && [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 10
+
+// armor
+[type] == armor && ([Quality] == Magic || [Quality] == Rare || [Quality] == Unique) # [Defense] >= 550  && [fireresist]+[lightresist]+[coldresist] >= 20
+
+// weapon
+[Type] == Polearm && ([Quality] == Magic || [Quality] == Rare || [Quality] == Unique) # [MaxDamage] >= 300
+[Type] == Spear && ([Quality] == Magic || [Quality] == Rare || [Quality] == Unique) # [MaxDamage] >= 300
