@@ -550,6 +550,10 @@ function main() {
 			}
 
 			break;
+		case 0x0f: // "Realm going down in %Param1 minutes."
+            D2Bot.printToConsole(getLocaleString(3651).replace("%d", param1) + " Stopping...");
+            D2Bot.stop();
+				break;
 		}
 	};
 
